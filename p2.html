@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width:500px;
+            height: 600px;
+            margin: auto;
+            display:flex;
+            background-image: url('https://wallpapers.com/images/hd/google-calendar-background-tfpb8g86k386xz0l.jpg'); /* Replace with your image URL */
+            background-size:cover;
+            background-position:center;
+            background-repeat: no-repeat;
+            flex-direction:column;
+            border: 4px solid black;
+        }
+        .header{
+            background-color:lightgreen;
+            padding: 10x;
+            display: flex;  
+            position: relative;  
+        }
+        .info{
+            display: flex;
+            align-items: center;
+ 
+        }
+        .pp{
+            height: 45px;
+            width: 45px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        .pn{
+            font-size: 20px;
+        }
+        .calling{
+           position: absolute;
+           right: 3px;
+        }
+        .vcp{
+            height: 45px;
+            width: 45px;
+            margin: 5px;
+            border-radius: 50%;
+        }
+        .chatbox{
+            padding: 10x;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            overflow:scroll;
+            scrollbar-width: none;
+        }
+        .date{
+            background-color: aquamarine;
+            align-self: center;
+            width: 50px;
+            margin: 2px;
+            border-radius: 20%;
+            position:sticky;
+            top: 10px;
+            z-index:10;
+        }
+        .message{
+            min-width: 20%;
+            max-width: 50%;
+            padding: 10px;
+            border: 2px solid black;
+            position: relative;
+            margin-top: 5px;
+            margin-left: 2px;
+            margin-right: 2px;
+            margin-bottom: 5px;
+            border-radius: 10%;
+
+        }
+        .sent{
+            align-self: flex-end;
+            background-color:lightgreen;
+        }
+        .recieved{
+            align-self: flex-start;
+            background-color: bisque;
+        }
+        .text{
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .time{
+            position: absolute;
+            bottom: 0px;
+            right: 3px;
+            font-size: 13px;
+
+        }
+        .e{
+            width: 210px;
+            height: 210px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="info">
+                <img src="profile-pic.png" class="pp">
+                <span class="pn">Dinath</span>
+            </div>
+            <div class="calling">
+                <img src="voc.png" class="vcp">
+                <img src="vc.png" class="vcp">
+            </div>
+        </div>
+        <div class="chatbox">
+            <span class="date">01 Aug</span>
+            <div class="message sent">
+                <span class="text"> hi</span>
+                <span class="time">10:55PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello</span>
+                <span class="time">11:05PM</span>
+            </div>
+            <div class="message sent">
+                <span class="text"> hi</span>
+                <span class="time">10:55PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello</span>
+                <span class="time">11:05PM</span>
+            </div>
+            <span class="date">02 Aug</span>
+            <div class="message sent">
+                <span class="text"> hi</span>
+                <span class="time">10:55PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello</span>
+                <span class="time">11:05PM</span>
+            </div>
+            <div class="message sent">
+                <img src="e6.jpg" class="e">
+
+                <span class="time">10:55PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello</span>
+                <span class="time">11:05PM</span>
+            </div>
+            <span class="date">03 Aug</span>
+            <div class="message sent">
+                <span class="text"> hi</span>
+                <span class="time">10:55PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello how are you doing ,what are you doing,ello how are you doing ,what are you doing</span>
+                <span class="time">11:05PM</span>
+            </div>
+            <div class="message sent">
+                <span class="text"> hi</span>
+                <span class="time">10:55PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello</span>
+                <span class="time">11:05PM</span>
+            </div>
+            <span class="date">04 Aug</span>
+            <div class="message sent">
+                <span class="text"> hi</span>
+                <span class="time">10:55PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello</span>
+                <span class="time">11:05PM</span>
+            </div>
+            <div class="message sent">
+                <span class="text"> hi</span>
+                <span class="time">10:55PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello</span>
+                <span class="time">11:05PM</span>
+            </div>
+            <div class="message sent">
+                <span class="text"> hi</span>
+                <span class="time">10:55PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello</span>
+                <span class="time">11:05PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello</span>
+                <span class="time">11:05PM</span>
+            </div>
+            <div class="message sent">
+                <span class="text"> hi</span>
+                <span class="time">10:55PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello</span>
+                <span class="time">11:05PM</span>
+            </div>
+            <div class="message sent">
+                <span class="text"> hi</span>
+                <span class="time">10:55PM</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">hello</span>
+                <span class="time">11:05PM</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
